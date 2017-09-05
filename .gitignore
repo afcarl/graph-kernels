@@ -28,3 +28,4 @@
 *.app
 
 *.Rcheck/*
+.Rproj.user
