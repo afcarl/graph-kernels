@@ -22,11 +22,11 @@ CalculateConnectedGraphletKernel(G, par)
   a kernel matrix of the connected graphlet kernel \eqn{K_{CGL}}{K_CGL}
 }
 \references{
-  Shervashidze, N. and Vishwanathan, S. V. N. and Petri, T. and
-  Mehlhorn, K. and Borgwardt, K. M.: \strong{Efficient Graphlet Kernels
-    For Large Graph Comparison}, \emph{Proceedings of the 12th
-    International Conference on Artificial Intelligence and Statistics
-    (AISTATS)}, 5, 488-495 (2009)
+  Shervashidze, N., Vishwanathan, S. V. N., Petri, T., Mehlhorn, K.,
+  Borgwardt, K. M.: \strong{Efficient Graphlet Kernels for Large Graph
+    Comparison}, \emph{Proceedings of the 12th International Conference
+    on Artificial Intelligence and Statistics (AISTATS)}, 5, 488-495
+  (2009)
   \url{http://proceedings.mlr.press/v5/shervashidze09a.html}.
 }
 \author{

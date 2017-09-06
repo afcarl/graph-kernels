@@ -111,6 +111,15 @@ CalculateGraphletKernel <- function(G, par) {
   CalculateGraphletKernelCpp(list(), al.list, par, 0)
 }
 
+CalculateShortestPathKernel <- function(G) {
+  G.floyd <- as.list(rep(NA, length(G)))
+  for (i in 1:length(G)) {
+    D <- distances(G[[i]])
+    G.floyd[[i]] <- make_full_graph(vcount(G[[i]])) %>% set_edge_attr("weight", value = D[lower.tri(D)])
+  }
+  CalculateKStepRandomWalkKernel(G, 1)
+}
+
 GetGraphInfo <- function(g) {
   ## an edge matrix
   E <- as_edgelist(g)
